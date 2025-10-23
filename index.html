@@ -6,7 +6,10 @@
   <title>Souved Ramdhun</title>
   <meta name="description" content="Souved Ramdhun — Cybersecurity student. Portfolio showcasing projects, skills, and contact." />
   <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
   <header class="site-header">
     <div class="container header-inner">
@@ -24,41 +27,38 @@
   </header>
 
   <main>
-    <!-- Hero -->
     <section id="hero" class="hero">
       <div class="container">
         <div class="hero-text">
           <h2>Hi — I'm Souved (Yash).</h2>
           <p>I’m a dedicated cybersecurity student at Polytechnics Mauritius. I build secure systems, host and protect web services, and develop practical security solutions.</p>
           <div class="hero-ctas">
-            <a class="btn" href="#projects">View Projects</a>
-            <a class="btn ghost" href="https://www.linkedin.com/in/yash-ramdhun-562a10370" target="_blank" rel="noopener">LinkedIn</a>
-            <a class="btn outline" href="Souved_Ramdhun_CV.pdf" download>Download CV</a>
+            <a class="btn" href="#projects"><i class="fa-solid fa-code"></i> View Projects</a>
+            <a class="btn ghost" href="https://www.linkedin.com/in/yash-ramdhun-562a10370" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+            <a class="btn outline" href="Souved_Ramdhun_CV.pdf" download><i class="fa-solid fa-file-arrow-down"></i> Download CV</a>
           </div>
         </div>
         <div class="hero-card">
           <ul>
-            <li><strong>Location:</strong> Flacq, Mauritius</li>
-            <li><strong>Email:</strong> <a href="mailto:yashramdhun50@gmail.com">yashramdhun50@gmail.com</a></li>
-            <li><strong>Course:</strong> Diploma in IT (Cybersecurity)</li>
-            <li><strong>Year:</strong> 3rd and final year (2025/2026)</li>
+            <li><i class="fa-solid fa-location-dot"></i> <strong>Location:</strong> Flacq, Mauritius</li>
+            <li><i class="fa-solid fa-envelope"></i> <strong>Email:</strong> <a href="mailto:yashramdhun50@gmail.com">yashramdhun50@gmail.com</a></li>
+            <li><i class="fa-solid fa-user-graduate"></i> <strong>Course:</strong> Diploma in IT (Cybersecurity)</li>
+            <li><i class="fa-solid fa-calendar-check"></i> <strong>Year:</strong> 3rd and final year (2025/2026)</li>
           </ul>
         </div>
       </div>
     </section>
 
-    <!-- About -->
     <section id="about" class="section container">
       <h3>About Me</h3>
-      <p>I’m pursuing a Diploma in IT (Cybersecurity) at Polytechnics Mauritius (2023–2026). I have coursework and hands-on projects in network security, server hardening, Linux administration, and application development. I enjoy solving security problems and improving systems to be safer and more resilient.</p>
+      <p>I’m pursuing a Diploma in IT (Cybersecurity) at Polytechnics Mauritius (2023–2026). I work on network security, server hardening, Linux administration, and application development. I enjoy solving security problems and making systems safer and more resilient.</p>
     </section>
 
-    <!-- Skills -->
     <section id="skills" class="section container">
       <h3>Skills</h3>
       <div class="skills-grid">
         <div class="skill-card">
-          <h4>Technical</h4>
+          <h4><i class="fa-solid fa-gear"></i> Technical</h4>
           <ul>
             <li>Web: HTML, CSS, JavaScript</li>
             <li>Linux Administration</li>
@@ -69,77 +69,71 @@
           </ul>
         </div>
         <div class="skill-card">
-          <h4>Soft</h4>
+          <h4><i class="fa-solid fa-users"></i> Soft</h4>
           <ul>
             <li>Decision-making</li>
-            <li>Working under pressure</li>
             <li>Teamwork</li>
             <li>Time management</li>
             <li>Adaptability</li>
+            <li>Working under pressure</li>
           </ul>
         </div>
       </div>
     </section>
 
-    <!-- Projects -->
     <section id="projects" class="section container">
       <h3>Projects</h3>
       <div class="projects-grid">
         <article class="project">
-          <h4>🔐 Capstone Project — Secure Metro Ticketing Application</h4>
+          <h4>🔐 Secure Metro Ticketing App</h4>
           <p><strong>Technologies:</strong> Flutter, Firebase, Node.js, Encryption APIs</p>
-          <p><strong>Description:</strong> Developing a secure digital ticketing platform that ensures user data privacy, encrypted transactions, and authenticated access for metro passengers. The system integrates encryption, backend validation, and secure database management to prevent fraud and enhance user experience.</p>
+          <p>Developing a secure digital ticketing platform ensuring data privacy, encrypted transactions, and authenticated access.</p>
         </article>
 
         <article class="project">
-          <h4>Local WordPress Hosting & Server Security Setup</h4>
-          <p><strong>Technologies:</strong> Ubuntu, Apache2, MySQL, PHP, WordPress, UFW, SSL, Nagios, WinSCP, SSH</p>
-          <p><strong>Description:</strong> Hosted WordPress on a VirtualBox Ubuntu server, configured Apache/MySQL/PHP, applied UFW firewall rules, deployed HTTPS (self-signed SSL), and set up Nagios for monitoring. Used SSH and WinSCP for secure file management.</p>
+          <h4>🖥️ WordPress Hosting & Server Security</h4>
+          <p><strong>Technologies:</strong> Ubuntu, Apache2, MySQL, PHP, UFW, SSL, Nagios</p>
+          <p>Configured firewall, HTTPS, and secure monitoring setup for local WordPress hosting.</p>
         </article>
 
         <article class="project">
-          <h4>Java Messaging App</h4>
+          <h4>💬 Java Messaging App</h4>
           <p><strong>Technologies:</strong> Java sockets, client-server architecture</p>
-          <p><strong>Description:</strong> Built a real-time messaging application supporting private messaging, using Java sockets and simple client-server communication.</p>
+          <p>Built a real-time messaging app supporting private messaging through socket programming.</p>
         </article>
       </div>
     </section>
 
-    <!-- Education / Certs -->
     <section id="education" class="section container">
       <h3>Education & Certifications</h3>
       <ul class="edu-list">
-        <li><strong>Diploma in IT (Cybersecurity)</strong> — Polytechnics Mauritius (2023–2026, ongoing, 3rd and final year)</li>
-        <li><strong>Certifications:</strong> Cybersecurity Incident Response Planning & Management (Alison), Internet and Computing Core Certificate</li>
+        <li><strong>Diploma in IT (Cybersecurity)</strong> — Polytechnics Mauritius (2023–2026, ongoing)</li>
+        <li><strong>Certifications:</strong> Cybersecurity Incident Response (Alison), Internet and Computing Core Certificate</li>
       </ul>
     </section>
 
-    <!-- Experience -->
     <section id="experience" class="section container">
       <h3>Experience</h3>
       <p><strong>Purchasing Officer (Trainee)</strong> — Solana Beach Hotel (Nov 2022 – Feb 2023)</p>
       <ul>
-        <li>Gained professional exposure to hotel operations and teamwork in a real-world environment.</li>
-        <li>Managed record keeping for purchases, receipts, and payments; used Excel for budget tracking and reporting.</li>
-        <li>Note: This internship was completed to gain general work experience and is not directly related to cybersecurity.</li>
+        <li>Worked in a real-world hospitality environment, improving teamwork and time management.</li>
+        <li>Handled purchase records, receipts, and budgets using Excel.</li>
+        <li>Gained professional exposure and work discipline experience.</li>
       </ul>
     </section>
 
-    <!-- Contact -->
     <section id="contact" class="section container contact-section">
       <h3>Contact</h3>
-      <p>If you'd like to discuss an opportunity or collaboration, reach out — I typically reply within a few days.</p>
-
+      <p>If you'd like to discuss an opportunity or collaboration, reach out below.</p>
       <div class="contact-grid">
         <div class="contact-card">
-          <h4>Email</h4>
+          <h4><i class="fa-solid fa-envelope"></i> Email</h4>
           <p><a href="mailto:yashramdhun50@gmail.com">yashramdhun50@gmail.com</a></p>
-          <button id="copyEmail">Copy email</button>
+          <button id="copyEmail"><i class="fa-regular fa-copy"></i> Copy email</button>
         </div>
-
         <div class="contact-card">
-          <h4>LinkedIn</h4>
-          <p><a href="https://www.linkedin.com/in/yash-ramdhun-562a10370" target="_blank" rel="noopener">linkedin.com/in/yash-ramdhun-562a10370</a></p>
+          <h4><i class="fa-brands fa-linkedin"></i> LinkedIn</h4>
+          <p><a href="https://www.linkedin.com/in/yash-ramdhun-562a10370" target="_blank" rel="noopener">linkedin.com/in/yash-ramdhun</a></p>
         </div>
       </div>
     </section>
@@ -147,7 +141,7 @@
 
   <footer class="site-footer">
     <div class="container">
-      <p>© <span id="year"></span> Souved Ramdhun — Built with care.</p>
+      <p>© <span id="year"></span> Souved Ramdhun — Built with passion.</p>
     </div>
   </footer>
 

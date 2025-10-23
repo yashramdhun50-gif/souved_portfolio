@@ -1,4 +1,3 @@
-// small interactions: copy email, year, and smooth scroll
 document.addEventListener('DOMContentLoaded', function () {
   const copyBtn = document.getElementById('copyEmail');
   const yearEl = document.getElementById('year');
@@ -8,22 +7,34 @@ document.addEventListener('DOMContentLoaded', function () {
     copyBtn.addEventListener('click', async () => {
       try {
         await navigator.clipboard.writeText('yashramdhun50@gmail.com');
-        copyBtn.textContent = 'Copied!';
-        setTimeout(()=> copyBtn.textContent = 'Copy email', 1800);
-      } catch (e) {
+        copyBtn.innerHTML = '<i class="fa-solid fa-check"></i> Copied!';
+        setTimeout(() => copyBtn.innerHTML = '<i class="fa-regular fa-copy"></i> Copy email', 2000);
+      } catch {
         window.location.href = 'mailto:yashramdhun50@gmail.com';
       }
     });
   }
 
-  // smooth scroll for internal anchors
-  document.querySelectorAll('a[href^="#"]').forEach(link=>{
-    link.addEventListener('click', function(e){
-      const target = document.querySelector(this.getAttribute('href'));
+  // smooth scroll
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', e => {
+      const target = document.querySelector(link.getAttribute('href'));
       if (target) {
         e.preventDefault();
-        target.scrollIntoView({behavior:'smooth', block:'start'});
+        target.scrollIntoView({ behavior: 'smooth' });
       }
     });
+  });
+
+  // fade-in animation
+  document.querySelectorAll('.section, .hero').forEach(section => {
+    section.style.opacity = 0;
+    section.style.transition = 'opacity 0.8s ease-in-out';
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.style.opacity = 1;
+      });
+    }, { threshold: 0.1 });
+    obs.observe(section);
   });
 });
