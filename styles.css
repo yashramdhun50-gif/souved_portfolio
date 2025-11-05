@@ -194,6 +194,18 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 22px;
 }
+/* Project image styling */
+.project-img {
+  width: 100%;
+  border-radius: var(--radius);
+  margin: 10px 0 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.project-img:hover {
+  transform: scale(1.02);
+}
 
 .project h4 {
   color: var(--accent);
@@ -278,3 +290,4 @@ body {
     display: none;
   }
 }
+
