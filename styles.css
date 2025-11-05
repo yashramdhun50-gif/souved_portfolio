@@ -194,22 +194,24 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 22px;
 }
-/* Project image styling (fixed size and centering) */
+/* Properly scaled project image */
 .project-img {
   width: 100%;
-  max-width: 500px; /* limits image size */
+  max-width: 380px;       /* sets clean display size */
   height: auto;
   display: block;
-  margin: 10px auto 16px; /* centers image */
+  margin: 12px auto 16px; /* centers image */
   border-radius: var(--radius);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  object-fit: cover;      /* ensures proportions stay clean */
 }
 
 .project-img:hover {
-  transform: scale(1.03);
-  box-shadow: 0 6px 18px rgba(11, 102, 255, 0.4);
+  transform: scale(1.04);
+  box-shadow: 0 6px 18px rgba(11, 102, 255, 0.5);
 }
+
 
 
 .project-img:hover {
@@ -299,5 +301,6 @@ body {
     display: none;
   }
 }
+
 
 
